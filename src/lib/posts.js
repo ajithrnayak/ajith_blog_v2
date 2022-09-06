@@ -5,7 +5,6 @@ import fs from 'fs'
 import { join } from 'path'
 
 const postsDirectory = join(process.cwd(), 'content', 'posts')
-
   
 export function getAllPosts() {
     const slugs = fs.readdirSync(postsDirectory)
@@ -13,7 +12,7 @@ export function getAllPosts() {
   
     return allPosts
   }
-  
+
 export function getPostBySlug(slug) {
     const realSlug = slug.replace(/\.md$/, '')
     const fullPath = join(postsDirectory, `${realSlug}.md`)

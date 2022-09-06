@@ -1,0 +1,31 @@
+// Typography
+
+$header-font-name: "Space Grotesk";
+$title-font-name: "Pacifico";
+
+$root-font-size: 18px;
+
+$title-font-size: 44px;
+$base-font-size: 18px;
+$small-font-size: 16px;
+
+$base-line-height: 1.56;
+
+// @see https://zellwk.com/blog/rem-vs-em/
+// Instead of using `em` or `rem`, we will use this property to compute units for child elements
+$root-em: round(18 * $base-line-height);
+
+// font weight
+$bold: bold;
+$medium: 500;
+$regular: normal;
+$semibold: 600;
+$extrabold: 800;
+$black: 900;
+
+// Fonts
+$system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+$base-font-family-default: $system-ui;
+$title-font-family: $title-font-name, $system-ui;
+$header-font-family: $header-font-name, $system-ui;
