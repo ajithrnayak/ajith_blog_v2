@@ -7,7 +7,11 @@ const postsDirectory = join(process.cwd(), 'content', 'posts')
   
 export function getAllPosts() {
     const slugs = fs.readdirSync(postsDirectory)
-    const allPosts = slugs.map((slug) => getPostBySlug(slug))
+    const allPosts = slugs
+    .map((slug) => getPostBySlug(slug))
+    .sort((post1, post2) =>
+      post1.frontmatter.date > post2.frontmatter.date ? -1 : 1
+    )
     
     return allPosts
   }
