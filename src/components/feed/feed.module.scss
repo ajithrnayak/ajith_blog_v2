@@ -1,0 +1,49 @@
+@import "../../styles/theme";
+@import "../../styles/mixins/rhythm";
+
+.feed {
+  position: relative;
+  color: inherit;
+  @include margin-bottom(3.5);
+}
+
+.feed_item {
+  @include margin-bottom(1.7857);
+}
+
+.feed_item_header {
+  @include margin-bottom(0.5714);
+}
+
+.post_title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: $base-font-size * 1.5;
+  font-weight: $bold;
+  font-family: $header-font-family;
+}
+
+.post_title_link {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  color: inherit;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.post_meta {
+  color: $color-secondary;
+  font-size: $small-font-size;
+  margin-top: 0;
+
+  p {
+    @include margin-bottom(0.5714);
+  }
+}
+
+.post_excerpt {
+  color: inherit;
+  margin: 0;
+}

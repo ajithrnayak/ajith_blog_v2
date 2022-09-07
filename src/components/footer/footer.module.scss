@@ -1,0 +1,34 @@
+@import "../../styles/theme";
+@import "../../styles/mixins/rhythm";
+@import "../../styles/mixins/breakpoints";
+
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top;
+  border-top: 2px solid $color-secondary;
+  bottom: 0;
+  width: inherit;
+  max-width: inherit;
+  @include margin-bottom(1);
+
+  @include breakpoint-sm {
+    display: block;
+  }
+}
+
+.copyright {
+  color: $color-secondary;
+  @include margin-top(0.5714);
+  margin-bottom: 0;
+}
+
+.sourcecode {
+  color: $color-secondary;
+  font-weight: $medium;
+  text-decoration: none;
+  @include margin-top(0.5714);
+  margin-bottom: 0;
+}

@@ -1,0 +1,15 @@
+@import "../../styles/theme";
+@import "../../styles/mixins/rhythm";
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  text-align: left;
+  margin: auto;
+  max-width: $layout-width;
+  width: 100%;
+  @include padding-left(1);
+  @include padding-right(1);
+}
