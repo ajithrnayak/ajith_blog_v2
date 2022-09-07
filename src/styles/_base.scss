@@ -33,6 +33,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+main {
+  min-width: inherit;
+  min-height: calc(100vh - 320px);
+}
+
 ::selection {
   background-color: $color-selection;
 }
