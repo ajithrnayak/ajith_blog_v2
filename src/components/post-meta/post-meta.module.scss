@@ -1,0 +1,32 @@
+@import "../../styles/theme";
+@import "../../styles/mixins/rhythm";
+@import "../../styles/mixins/breakpoints";
+
+.post_meta {
+  max-width: inherit;
+  width: inherit;
+  @include margin-bottom(2.5);
+}
+
+.post_title {
+  font-family: $header-font-family;
+  font-weight: $medium;
+  font-size: $base-font-size * 2.5;
+  @include line-height(2.5);
+  @include margin-top(0);
+}
+
+.post_caption {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  color: $color-text-caption;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  @include breakpoint-sm {
+    display: block;
+  }
+}
