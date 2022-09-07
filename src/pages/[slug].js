@@ -6,12 +6,11 @@ import BuyMeCoffee from "../components/buymecoffee/buymecoffee"
 
 
 const Post = ({ content, frontmatter }) => {
-    const timeToRead = 5
-    
+
     return (
       <Layout>
         <article>
-        <PostMeta frontmatter={frontmatter} timeToRead={timeToRead} />
+        <PostMeta frontmatter={frontmatter} />
         <PostContent content={content} />
         </article>
         <BuyMeCoffee />

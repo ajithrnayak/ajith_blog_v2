@@ -17,7 +17,6 @@ export function getAllPosts() {
   }
 
 export function getPostBySlug(slug) {
-  console.log("Slug", slug)
     let dirPath = join(postsDirectory, slug)
     const fullPath = join(dirPath, `index.md`)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
