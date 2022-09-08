@@ -1,6 +1,6 @@
 "use strict"
 
-module.exports = {
+const Config = {
   url: "https://ajith.blog",
   pathPrefix: "/",
   title: "Ajith's Blog",
@@ -22,3 +22,5 @@ module.exports = {
     twitter: `@ajthrnayak`,
   },
 }
+
+export default Config
