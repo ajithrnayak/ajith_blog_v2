@@ -6,7 +6,13 @@ const PostContent = ({ content }) => {
   
   return (
     <section className={styles.post_content}>
-    <ReactMarkdown components={CodeHighlighter}>{content}</ReactMarkdown>
+    <ReactMarkdown
+     components={{
+      code: ({ ...props }) => <CodeHighlighter {...props} />,
+    }}
+    >
+      {content}
+    </ReactMarkdown>
     </section>
   )
 }
