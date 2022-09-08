@@ -1,12 +1,12 @@
-import React from "react"
 import styles from "./post-content.module.scss"
-import ReactMarkdown from "react-markdown";
+import ReactMarkdown from "react-markdown"
+import CodeHighlighter from "../code-highlighter/code-highlighter"
 
 const PostContent = ({ content }) => {
   
   return (
     <section className={styles.post_content}>
-    <ReactMarkdown>{content}</ReactMarkdown>
+    <ReactMarkdown components={CodeHighlighter}>{content}</ReactMarkdown>
     </section>
   )
 }

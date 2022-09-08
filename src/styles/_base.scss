@@ -229,11 +229,3 @@ td {
     font-size: $base-font-size * 0.75;
   }
 }
-
-// Image Wrapper
-// ---------------
-#gatsby-focus-wrapper {
-  .gatsby-resp-image-wrapper {
-    max-width: 100% !important;
-  }
-}
